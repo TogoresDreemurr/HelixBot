@@ -68,7 +68,8 @@ Uprawnienia admina:
 ## Testy
 
 ```bash
-./.venv/bin/python scripts/smoke_test.py
-./.venv/bin/python scripts/tasker_test.py
-./.venv/bin/python scripts/pogoda_pl_test.py
+!pogoda
+!zloto
+!ping
+!task
 ```
