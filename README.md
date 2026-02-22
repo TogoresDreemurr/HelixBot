@@ -38,20 +38,6 @@ DISCORD_ROUTINE_SYNC_ENABLED=1
 DISCORD_ROUTINE_SYNC_EVERY_RESTARTS=5
 ```
 
-Dla pluginu `gold_pln`:
-
-```env
-# GoldAPI (opcjonalnie)
-GOLDAPI_KEY=...
-
-# XTB (opcjonalnie)
-XTB_USER_ID=...
-XTB_PASSWORD=...
-XTB_SYMBOL=GOLD
-XTB_API_HOST=xapi.xtb.com
-XTB_API_PORT=5124
-```
-
 ## Uruchomienie
 
 ```bash
@@ -73,55 +59,6 @@ Uprawnienia admina:
 - lub rola z `HELIX_ADMIN_ROLE_IDS`,
 - lub właściciel guildy (jeśli listy są puste).
 
-## Pluginy
-
-Aktualnie zainstalowane:
-
-- `smoke`
-- `tasker`
-- `pogoda_pl`
-- `gold_pln`
-
-### `tasker`
-
-- `!task add <tresc>`
-- `!task list`
-- `!task done <id>`
-- `!task remove <id>`
-- `!task stats`
-- `!task help`
-- `!roll <expr>` (np. `!roll 2d6+1`)
-
-Stan zadań: `data/tasker/state.json`.
-
-### `pogoda_pl`
-
-- `!pogoda`
-- `!pogoda <miasto>`
-- `!pogoda all`
-- `!pogoda help`
-
-Źródło: Open-Meteo (cache 5 min per miasto).
-
-### `gold_pln`
-
-- `!zloto start [interwal]` (np. `2s`, `15m`, domyślnie `30m`)
-- `!zloto stop`
-- `!zloto status`
-- `!zloto now`
-- `!zloto source`
-- `!zloto source list`
-- `!zloto source set <nbp|stooq|goldapi|xtb>`
-- `!zloto help`
-
-Obsługiwane źródła:
-
-- `nbp` (PLN/g, referencyjne)
-- `stooq` (XAUUSD, USD/oz)
-- `goldapi` (XAU/USD, USD/oz, wymaga `GOLDAPI_KEY`)
-- `xtb` (instrument z konta XTB, wymaga `XTB_USER_ID` i `XTB_PASSWORD`)
-
-Stan monitoringu: `data/gold_pln/state.json`.
 
 ## Struktura projektu
 
