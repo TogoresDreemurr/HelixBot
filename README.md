@@ -18,30 +18,20 @@ python3 -m venv .venv
 
 ## Konfiguracja `.env`
 
-Minimalna konfiguracja:
-
 ```env
-DISCORD_TOKEN=...
-DISCORD_GUILD_ID=...
-HELIX_ADMIN_USER_IDS=123456789012345678
-HELIX_ADMIN_ROLE_IDS=
-BOT_LANG=pl
-```
-
-Opcjonalne:
-
-```env
-HELIX_PERSIST_PLUGINS=1
-DISCORD_RESET_COMMANDS=0
-DISCORD_RESET_GLOBAL=0
+DISCORD_TOKEN=Here-write-your-token
+HELIX_ADMIN_USER_IDS=user_id
+HELIX_ADMIN_ROLE_IDS=role_id
 DISCORD_ROUTINE_SYNC_ENABLED=1
 DISCORD_ROUTINE_SYNC_EVERY_RESTARTS=5
+DISCORD_RESET_COMMANDS=0
+BOT_LANG=en
 ```
 
 ## Uruchomienie
 
 ```bash
-cd /home/ubuntu/helixbot-copy1
+cd /home/ubuntu/helixbot
 ./.venv/bin/python main.py
 ```
 
