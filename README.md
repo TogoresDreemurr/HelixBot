@@ -23,6 +23,7 @@ nano .env
 
 ```env
 DISCORD_TOKEN=Here-write-your-token
+DISCORD_GUILD_ID=Your-guild-id
 HELIX_ADMIN_USER_IDS=user_id
 HELIX_ADMIN_ROLE_IDS=role_id
 DISCORD_ROUTINE_SYNC_ENABLED=1
