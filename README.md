@@ -66,8 +66,3 @@ Uprawnienia admina:
 ./.venv/bin/python scripts/tasker_test.py
 ./.venv/bin/python scripts/pogoda_pl_test.py
 ```
-
-## Uwaga bezpieczeństwa
-
-- Nie commituj prawdziwego `.env` z tokenami/hasłami.
-- Jeśli token bota lub hasła wyciekły, rotuj je natychmiast.
