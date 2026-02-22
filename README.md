@@ -40,6 +40,12 @@ source .venv/bin/activate
 docker compose up -d --build
 docker compose logs -f helixbot
 ```
+## Wylaczanie
+
+```bash
+cd HelixBot
+docker compose down
+```
 
 ## Zarządzanie pluginami (slash)
 
