@@ -1,0 +1,14 @@
+services:
+  helixbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: helixbot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DISCORD_TOKEN: ${DISCORD_TOKEN:?Missing DISCORD_TOKEN in .env}
+      DISCORD_GUILD_ID: ${DISCORD_GUILD_ID:?Missing DISCORD_GUILD_ID in .env}
+    volumes:
+      - ./data:/app/data
