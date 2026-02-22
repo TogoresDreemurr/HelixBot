@@ -79,3 +79,5 @@ Uprawnienia admina:
 !ping
 !task
 ```
+Copyright (c) 2026 TogoreDreemurr
+All rights reserved.
