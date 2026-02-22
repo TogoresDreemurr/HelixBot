@@ -16,8 +16,6 @@ cd HelixBot
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-docker compose up -d --build
-docker compose logs -f helixbot
 ```
 
 ## Konfiguracja `.env`
@@ -35,8 +33,10 @@ BOT_LANG=en
 ## Uruchomienie
 
 ```bash
-cd /home/ubuntu/helixbot
-./.venv/bin/python main.py
+cd HelixBot
+source .venv/bin/activate
+docker compose up -d --build
+docker compose logs -f helixbot
 ```
 
 ## Zarządzanie pluginami (slash)
