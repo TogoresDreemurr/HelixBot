@@ -11,9 +11,11 @@ Modularny bot Discord w Pythonie z systemem pluginów (hot-load/unload), komenda
 ## Instalacja
 
 ```bash
-cd /home/ubuntu/helixbot-copy1
+git clone https://github.com/TogoresDreemurr/HelixBot.git
+cd /home/ubuntu/helixbot
 python3 -m venv .venv
-./.venv/bin/pip install -r requirements.txt
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Konfiguracja `.env`
