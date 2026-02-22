@@ -1,0 +1,7 @@
+{
+  "name": "pogoda_pl",
+  "version": "1.0.0",
+  "api_version": "1.0.0",
+  "entry": "main.py",
+  "class": "Plugin"
+}
